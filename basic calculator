@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num1,num2;
+    char op;
+    cout << "*****Menu*****\n"<< "Please select your operation to be implemented\n"<< "Enter:\n"<< "1 for Addition\n"<< "2 for Subtraction\n"<< "3 for Multiplication\n"<< "4 for Division\n";
+    cout << "Enter: ";
+    cin >> op;
+    cout << "Enter 2 numbers to implement this operation: ";
+    cin >> num1 >> num2;
+
+    int result;
+    if(op == '1'){
+        result = num1 + num2;
+            cout << "You have selected addition operation \n";
+    }
+    else if(op == '2'){
+        result = num1 - num2;
+        cout <<"You have selected subtraction operation\n";
+    }
+    else if(op == '3'){
+        result =num1 * num2;
+        cout << "You have selected multiplication operation\n";
+    }
+    else if(op == '4'){
+        result = num1 / num2;
+        cout << "Yo ave selected division operation\n";
+    }
+    else{
+        cout << "This operation is invaid";
+    }
+    cout<<"Result is " <<result;
+
+
+
+    return 0;
+
+    }
